@@ -1,0 +1,11 @@
+
+class MethodBody {
+    function boolean Body() {
+
+        if (a<9*9)
+        {
+            return this.Body(1,2,3, 4*7/9*7);
+        }
+        return a+b/c + 7;
+    }
+}

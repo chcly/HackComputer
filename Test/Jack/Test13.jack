@@ -1,0 +1,24 @@
+
+class Main {
+	static int ram;
+
+	function void main() {
+		var int j, t, i;
+		let i = 0;		
+		let j = 0;
+		while ( i < 15 )
+		{
+			let ram = 16384;
+			let j = 0;
+
+			while (j < 8192)
+			{
+				let t = ram[j];
+				let ram[j] = !t;
+				let j = j + 1;
+			}
+			let i = i + 1;
+		}
+		return;
+	}
+}

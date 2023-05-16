@@ -1,0 +1,1056 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="Console_8h" kind="file" language="C++">
+    <compoundname>Console.h</compoundname>
+    <includes refid="String_8h" local="yes">String.h</includes>
+    <includes refid="Context_8h" local="yes">UserInterface/Context.h</includes>
+    <includedby refid="Assembler_2Main_8cpp" local="yes">Source/Assembler/Main.cpp</includedby>
+    <includedby refid="BitUtils_8h" local="yes">Source/Chips/BitUtils.h</includedby>
+    <includedby refid="Chip_8h" local="yes">Source/Chips/Chip.h</includedby>
+    <includedby refid="Compiler_2Analyzer_2Main_8cpp" local="yes">Source/Compiler/Analyzer/Main.cpp</includedby>
+    <includedby refid="Compiler_2Compiler_2Main_8cpp" local="yes">Source/Compiler/Compiler/Main.cpp</includedby>
+    <includedby refid="Compiler_2Generator_2Main_8cpp" local="yes">Source/Compiler/Generator/Main.cpp</includedby>
+    <includedby refid="Utils_2CommandLine_2Parser_8cpp" local="yes">Source/Utils/CommandLine/Parser.cpp</includedby>
+    <includedby refid="Console_8cpp" local="yes">Source/Utils/Console.cpp</includedby>
+    <includedby refid="Exception_8h" local="yes">Source/Utils/Exception.h</includedby>
+    <includedby refid="VirtualMachine_2Main_8cpp" local="yes">Source/VirtualMachine/Main.cpp</includedby>
+    <incdepgraph>
+      <node id="3577">
+        <label>cstdint</label>
+      </node>
+      <node id="3575">
+        <label>UserInterface/Context.h</label>
+        <childnode refid="3571" relation="include">
+        </childnode>
+        <childnode refid="3576" relation="include">
+        </childnode>
+        <childnode refid="3578" relation="include">
+        </childnode>
+      </node>
+      <node id="3573">
+        <label>string</label>
+      </node>
+      <node id="3576">
+        <label>Utils/UserInterface/Common.h</label>
+        <childnode refid="3577" relation="include">
+        </childnode>
+      </node>
+      <node id="3571">
+        <label>String.h</label>
+        <childnode refid="3572" relation="include">
+        </childnode>
+        <childnode refid="3573" relation="include">
+        </childnode>
+        <childnode refid="3574" relation="include">
+        </childnode>
+      </node>
+      <node id="3574">
+        <label>vector</label>
+      </node>
+      <node id="3572">
+        <label>sstream</label>
+      </node>
+      <node id="3578">
+        <label>Utils/UserInterface/Math.h</label>
+        <childnode refid="3577" relation="include">
+        </childnode>
+        <childnode refid="3574" relation="include">
+        </childnode>
+        <childnode refid="3576" relation="include">
+        </childnode>
+      </node>
+      <node id="3570">
+        <label>Source/Utils/Console.h</label>
+        <link refid="Console_8h"/>
+        <childnode refid="3571" relation="include">
+        </childnode>
+        <childnode refid="3575" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3660">
+        <label>Source/Chips/Ram512.h</label>
+        <childnode refid="3661" relation="include">
+        </childnode>
+      </node>
+      <node id="3673">
+        <label>Source/Chips/XOr.cpp</label>
+      </node>
+      <node id="3638">
+        <label>Source/Chips/Mux4Way16.cpp</label>
+      </node>
+      <node id="3655">
+        <label>Source/Chips/Or8Way.cpp</label>
+      </node>
+      <node id="3680">
+        <label>Source/Compiler/Analyzer/Parser.h</label>
+        <childnode refid="3674" relation="include">
+        </childnode>
+        <childnode refid="3681" relation="include">
+        </childnode>
+        <childnode refid="3675" relation="include">
+        </childnode>
+        <childnode refid="3682" relation="include">
+        </childnode>
+        <childnode refid="3676" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+      </node>
+      <node id="3639">
+        <label>Source/Chips/Mux4Way16.h</label>
+        <childnode refid="3638" relation="include">
+        </childnode>
+      </node>
+      <node id="3694">
+        <label>Source/Compiler/Generator/VmEmitter.h</label>
+        <childnode refid="3682" relation="include">
+        </childnode>
+        <childnode refid="3687" relation="include">
+        </childnode>
+        <childnode refid="3695" relation="include">
+        </childnode>
+      </node>
+      <node id="3702">
+        <label>Source/Assembler/Parser.cpp</label>
+      </node>
+      <node id="3672">
+        <label>Source/Chips/XOr.h</label>
+        <childnode refid="3606" relation="include">
+        </childnode>
+        <childnode refid="3673" relation="include">
+        </childnode>
+      </node>
+      <node id="3617">
+        <label>Source/Chips/DMux.h</label>
+        <childnode refid="3618" relation="include">
+        </childnode>
+      </node>
+      <node id="3609">
+        <label>Source/Chips/Bit.h</label>
+        <childnode refid="3610" relation="include">
+        </childnode>
+      </node>
+      <node id="3601">
+        <label>Source/Computer/AssemblyDebugger.h</label>
+        <childnode refid="3593" relation="include">
+        </childnode>
+        <childnode refid="3594" relation="include">
+        </childnode>
+        <childnode refid="3595" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+      </node>
+      <node id="3704">
+        <label>Source/Compiler/Analyzer/Scanner.h</label>
+        <childnode refid="3681" relation="include">
+        </childnode>
+        <childnode refid="3685" relation="include">
+        </childnode>
+      </node>
+      <node id="3717">
+        <label>Source/VirtualMachine/Emitter.cpp</label>
+      </node>
+      <node id="3699">
+        <label>Source/Compiler/Generator/SymbolTable.cpp</label>
+      </node>
+      <node id="3661">
+        <label>Source/Chips/Ram512.cpp</label>
+      </node>
+      <node id="3687">
+        <label>Source/Compiler/Generator/Generator.h</label>
+        <childnode refid="3675" relation="include">
+        </childnode>
+        <childnode refid="3682" relation="include">
+        </childnode>
+        <childnode refid="3676" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+      </node>
+      <node id="3651">
+        <label>Source/Chips/Or.cpp</label>
+      </node>
+      <node id="3625">
+        <label>Source/Chips/HalfAdder.cpp</label>
+      </node>
+      <node id="3679">
+        <label>Source/Utils/Exception.h</label>
+        <childnode refid="3580" relation="include">
+        </childnode>
+        <childnode refid="3591" relation="include">
+        </childnode>
+        <childnode refid="3588" relation="include">
+        </childnode>
+        <childnode refid="3674" relation="include">
+        </childnode>
+        <childnode refid="3680" relation="include">
+        </childnode>
+        <childnode refid="3683" relation="include">
+        </childnode>
+        <childnode refid="3685" relation="include">
+        </childnode>
+        <childnode refid="3686" relation="include">
+        </childnode>
+        <childnode refid="3675" relation="include">
+        </childnode>
+        <childnode refid="3682" relation="include">
+        </childnode>
+        <childnode refid="3687" relation="include">
+        </childnode>
+        <childnode refid="3676" relation="include">
+        </childnode>
+        <childnode refid="3593" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+        <childnode refid="3688" relation="include">
+        </childnode>
+        <childnode refid="3715" relation="include">
+        </childnode>
+        <childnode refid="3717" relation="include">
+        </childnode>
+        <childnode refid="3710" relation="include">
+        </childnode>
+      </node>
+      <node id="3707">
+        <label>Source/Assembler/Parser.h</label>
+        <childnode refid="3580" relation="include">
+        </childnode>
+        <childnode refid="3702" relation="include">
+        </childnode>
+        <childnode refid="3591" relation="include">
+        </childnode>
+        <childnode refid="3675" relation="include">
+        </childnode>
+        <childnode refid="3708" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+        <childnode refid="3600" relation="include">
+        </childnode>
+      </node>
+      <node id="3691">
+        <label>Source/Compiler/Common/NodeUtils.cpp</label>
+      </node>
+      <node id="3700">
+        <label>Source/Utils/ParserBase/ScannerBase.h</label>
+        <childnode refid="3701" relation="include">
+        </childnode>
+        <childnode refid="3704" relation="include">
+        </childnode>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3706" relation="include">
+        </childnode>
+        <childnode refid="3712" relation="include">
+        </childnode>
+        <childnode refid="3713" relation="include">
+        </childnode>
+      </node>
+      <node id="3671">
+        <label>Source/Chips/SRLatch.cpp</label>
+      </node>
+      <node id="3644">
+        <label>Source/Chips/NOr.h</label>
+        <childnode refid="3645" relation="include">
+        </childnode>
+      </node>
+      <node id="3658">
+        <label>Source/Chips/Ram4k.h</label>
+        <childnode refid="3659" relation="include">
+        </childnode>
+      </node>
+      <node id="3709">
+        <label>Source/VirtualMachine/Parser.h</label>
+        <childnode refid="3675" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+        <childnode refid="3710" relation="include">
+        </childnode>
+        <childnode refid="3711" relation="include">
+        </childnode>
+      </node>
+      <node id="3666">
+        <label>Source/Chips/Register.h</label>
+        <childnode refid="3588" relation="include">
+        </childnode>
+        <childnode refid="3589" relation="include">
+        </childnode>
+        <childnode refid="3667" relation="include">
+        </childnode>
+      </node>
+      <node id="3581">
+        <label>Source/Chips/BitUtils.h</label>
+        <childnode refid="3582" relation="include">
+        </childnode>
+        <childnode refid="3583" relation="include">
+        </childnode>
+        <childnode refid="3584" relation="include">
+        </childnode>
+      </node>
+      <node id="3681">
+        <label>Source/Compiler/Analyzer/Parser.cpp</label>
+      </node>
+      <node id="3667">
+        <label>Source/Chips/Register.cpp</label>
+      </node>
+      <node id="3631">
+        <label>Source/Chips/Screen.h</label>
+        <childnode refid="3629" relation="include">
+        </childnode>
+        <childnode refid="3601" relation="include">
+        </childnode>
+        <childnode refid="3602" relation="include">
+        </childnode>
+        <childnode refid="3600" relation="include">
+        </childnode>
+        <childnode refid="3603" relation="include">
+        </childnode>
+      </node>
+      <node id="3689">
+        <label>Source/Compiler/Common/Node.h</label>
+        <childnode refid="3681" relation="include">
+        </childnode>
+        <childnode refid="3684" relation="include">
+        </childnode>
+        <childnode refid="3690" relation="include">
+        </childnode>
+        <childnode refid="3686" relation="include">
+        </childnode>
+        <childnode refid="3691" relation="include">
+        </childnode>
+        <childnode refid="3692" relation="include">
+        </childnode>
+        <childnode refid="3693" relation="include">
+        </childnode>
+        <childnode refid="3682" relation="include">
+        </childnode>
+        <childnode refid="3687" relation="include">
+        </childnode>
+        <childnode refid="3694" relation="include">
+        </childnode>
+      </node>
+      <node id="3591">
+        <label>Source/Bindings/Bindings.cpp</label>
+      </node>
+      <node id="3593">
+        <label>Source/Computer/AssemblyDebugger/AssemblyDebuggerPrivate.cpp</label>
+      </node>
+      <node id="3583">
+        <label>Source/Chips/ALU.cpp</label>
+      </node>
+      <node id="3613">
+        <label>Source/Chips/Timer.h</label>
+        <childnode refid="3592" relation="include">
+        </childnode>
+        <childnode refid="3588" relation="include">
+        </childnode>
+        <childnode refid="3614" relation="include">
+        </childnode>
+      </node>
+      <node id="3643">
+        <label>Source/Chips/Nand.cpp</label>
+      </node>
+      <node id="3607">
+        <label>Source/Chips/And16.h</label>
+        <childnode refid="3608" relation="include">
+        </childnode>
+      </node>
+      <node id="3669">
+        <label>Source/Chips/Rom32.cpp</label>
+      </node>
+      <node id="3693">
+        <label>Source/Compiler/Common/XmlWriter.cpp</label>
+      </node>
+      <node id="3664">
+        <label>Source/Chips/Ram8.cpp</label>
+      </node>
+      <node id="3714">
+        <label>Source/VirtualMachine/Scanner.cpp</label>
+      </node>
+      <node id="3686">
+        <label>Source/Compiler/Common/Node.cpp</label>
+      </node>
+      <node id="3636">
+        <label>Source/Chips/Mux16.h</label>
+        <childnode refid="3637" relation="include">
+        </childnode>
+        <childnode refid="3638" relation="include">
+        </childnode>
+      </node>
+      <node id="3618">
+        <label>Source/Chips/DMux.cpp</label>
+      </node>
+      <node id="3677">
+        <label>Source/Utils/CommandLine/Parser.cpp</label>
+      </node>
+      <node id="3710">
+        <label>Source/VirtualMachine/Main.cpp</label>
+      </node>
+      <node id="3682">
+        <label>Source/Compiler/Generator/Generator.cpp</label>
+      </node>
+      <node id="3594">
+        <label>Source/Computer/AssemblyDebugger/AssemblyDebuggerPrivate.h</label>
+        <childnode refid="3593" relation="include">
+        </childnode>
+        <childnode refid="3595" relation="include">
+        </childnode>
+      </node>
+      <node id="3650">
+        <label>Source/Chips/Or.h</label>
+        <childnode refid="3606" relation="include">
+        </childnode>
+        <childnode refid="3651" relation="include">
+        </childnode>
+      </node>
+      <node id="3653">
+        <label>Source/Chips/Or16.cpp</label>
+      </node>
+      <node id="3608">
+        <label>Source/Chips/And16.cpp</label>
+      </node>
+      <node id="3585">
+        <label>Source/Chips/Add16.h</label>
+        <childnode refid="3586" relation="include">
+        </childnode>
+      </node>
+      <node id="3599">
+        <label>Source/Computer/Executable.cpp</label>
+      </node>
+      <node id="3692">
+        <label>Source/Compiler/Common/Tree.cpp</label>
+      </node>
+      <node id="3696">
+        <label>Source/Compiler/Generator/Symbol.h</label>
+        <childnode refid="3687" relation="include">
+        </childnode>
+        <childnode refid="3694" relation="include">
+        </childnode>
+        <childnode refid="3697" relation="include">
+        </childnode>
+        <childnode refid="3698" relation="include">
+        </childnode>
+      </node>
+      <node id="3690">
+        <label>Source/Compiler/Common/DotWriter.cpp</label>
+      </node>
+      <node id="3659">
+        <label>Source/Chips/Ram4K.cpp</label>
+      </node>
+      <node id="3674">
+        <label>Source/Compiler/Analyzer/Main.cpp</label>
+      </node>
+      <node id="3606">
+        <label>Source/Chips/FullAdder.cpp</label>
+      </node>
+      <node id="3611">
+        <label>Source/Chips/Clock.h</label>
+        <childnode refid="3612" relation="include">
+        </childnode>
+        <childnode refid="3613" relation="include">
+        </childnode>
+      </node>
+      <node id="3605">
+        <label>Source/Chips/And.cpp</label>
+      </node>
+      <node id="3648">
+        <label>Source/Chips/Not16.h</label>
+        <childnode refid="3649" relation="include">
+        </childnode>
+      </node>
+      <node id="3635">
+        <label>Source/Chips/Mux.cpp</label>
+      </node>
+      <node id="3616">
+        <label>Source/Chips/DFlipFlop.cpp</label>
+      </node>
+      <node id="3642">
+        <label>Source/Chips/NAnd.h</label>
+        <childnode refid="3643" relation="include">
+        </childnode>
+      </node>
+      <node id="3665">
+        <label>Source/Chips/Ram64.h</label>
+        <childnode refid="3663" relation="include">
+        </childnode>
+      </node>
+      <node id="3706">
+        <label>Source/Utils/ParserBase/ParserBase.h</label>
+        <childnode refid="3707" relation="include">
+        </childnode>
+        <childnode refid="3680" relation="include">
+        </childnode>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3709" relation="include">
+        </childnode>
+      </node>
+      <node id="3703">
+        <label>Source/Assembler/Scanner.cpp</label>
+      </node>
+      <node id="3713">
+        <label>Source/VirtualMachine/Scanner.h</label>
+        <childnode refid="3711" relation="include">
+        </childnode>
+        <childnode refid="3714" relation="include">
+        </childnode>
+      </node>
+      <node id="3711">
+        <label>Source/VirtualMachine/Parser.cpp</label>
+      </node>
+      <node id="3688">
+        <label>Source/Utils/IndexCache.h</label>
+        <childnode refid="3689" relation="include">
+        </childnode>
+        <childnode refid="3696" relation="include">
+        </childnode>
+        <childnode refid="3698" relation="include">
+        </childnode>
+        <childnode refid="3700" relation="include">
+        </childnode>
+      </node>
+      <node id="3634">
+        <label>Source/Chips/Mux.h</label>
+        <childnode refid="3635" relation="include">
+        </childnode>
+      </node>
+      <node id="3582">
+        <label>Source/Assembler/Instruction.cpp</label>
+      </node>
+      <node id="3663">
+        <label>Source/Chips/Ram64.cpp</label>
+      </node>
+      <node id="3647">
+        <label>Source/Chips/Not.cpp</label>
+      </node>
+      <node id="3656">
+        <label>Source/Chips/ProgramCounter.h</label>
+        <childnode refid="3588" relation="include">
+        </childnode>
+        <childnode refid="3589" relation="include">
+        </childnode>
+        <childnode refid="3657" relation="include">
+        </childnode>
+      </node>
+      <node id="3626">
+        <label>Source/Chips/IMemorySegment.h</label>
+        <childnode refid="3627" relation="include">
+        </childnode>
+      </node>
+      <node id="3587">
+        <label>Source/Chips/ALU.h</label>
+        <childnode refid="3583" relation="include">
+        </childnode>
+        <childnode refid="3588" relation="include">
+        </childnode>
+        <childnode refid="3589" relation="include">
+        </childnode>
+      </node>
+      <node id="3622">
+        <label>Source/Chips/DMux8Way.cpp</label>
+      </node>
+      <node id="3612">
+        <label>Source/Chips/Clock.cpp</label>
+      </node>
+      <node id="3597">
+        <label>Source/Computer/ConsoleRuntime/ConsoleRuntimePrivate.h</label>
+        <childnode refid="3596" relation="include">
+        </childnode>
+        <childnode refid="3598" relation="include">
+        </childnode>
+      </node>
+      <node id="3637">
+        <label>Source/Chips/Mux16.cpp</label>
+      </node>
+      <node id="3589">
+        <label>Source/Chips/CPU.h</label>
+        <childnode refid="3590" relation="include">
+        </childnode>
+        <childnode refid="3588" relation="include">
+        </childnode>
+      </node>
+      <node id="3620">
+        <label>Source/Chips/DMux4Way.cpp</label>
+      </node>
+      <node id="3610">
+        <label>Source/Chips/Bit.cpp</label>
+      </node>
+      <node id="3668">
+        <label>Source/Chips/Rom32.h</label>
+        <childnode refid="3590" relation="include">
+        </childnode>
+        <childnode refid="3669" relation="include">
+        </childnode>
+      </node>
+      <node id="3623">
+        <label>Source/Chips/FullAdder.h</label>
+        <childnode refid="3606" relation="include">
+        </childnode>
+      </node>
+      <node id="3627">
+        <label>Source/Chips/DefaultMemorySegment.h</label>
+        <childnode refid="3628" relation="include">
+        </childnode>
+        <childnode refid="3631" relation="include">
+        </childnode>
+      </node>
+      <node id="3628">
+        <label>Source/Chips/Ram16k.h</label>
+        <childnode refid="3629" relation="include">
+        </childnode>
+      </node>
+      <node id="3614">
+        <label>Source/Chips/Timer.cpp</label>
+      </node>
+      <node id="3708">
+        <label>Source/Computer/Common.h</label>
+        <childnode refid="3593" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+      </node>
+      <node id="3595">
+        <label>Source/Computer/AssemblyDebugger.cpp</label>
+      </node>
+      <node id="3670">
+        <label>Source/Chips/SRLatch.h</label>
+        <childnode refid="3671" relation="include">
+        </childnode>
+      </node>
+      <node id="3632">
+        <label>Source/Chips/Inc16.h</label>
+        <childnode refid="3633" relation="include">
+        </childnode>
+      </node>
+      <node id="3596">
+        <label>Source/Computer/ConsoleRuntime/ConsoleRuntimePrivate.cpp</label>
+      </node>
+      <node id="3705">
+        <label>Source/Utils/ParserBase/ParserBase.cpp</label>
+      </node>
+      <node id="3675">
+        <label>Source/Compiler/Compiler/Main.cpp</label>
+      </node>
+      <node id="3604">
+        <label>Source/Chips/And.h</label>
+        <childnode refid="3605" relation="include">
+        </childnode>
+        <childnode refid="3606" relation="include">
+        </childnode>
+      </node>
+      <node id="3649">
+        <label>Source/Chips/Not16.cpp</label>
+      </node>
+      <node id="3580">
+        <label>Source/Assembler/Main.cpp</label>
+      </node>
+      <node id="3645">
+        <label>Source/Chips/NOr.cpp</label>
+      </node>
+      <node id="3695">
+        <label>Source/Compiler/Generator/VmEmitter.cpp</label>
+      </node>
+      <node id="3600">
+        <label>Source/Computer/RuntimeInterface.h</label>
+        <childnode refid="3601" relation="include">
+        </childnode>
+        <childnode refid="3602" relation="include">
+        </childnode>
+        <childnode refid="3603" relation="include">
+        </childnode>
+      </node>
+      <node id="3646">
+        <label>Source/Chips/Not.h</label>
+        <childnode refid="3647" relation="include">
+        </childnode>
+      </node>
+      <node id="3615">
+        <label>Source/Chips/DFlipFlop.h</label>
+        <childnode refid="3609" relation="include">
+        </childnode>
+        <childnode refid="3616" relation="include">
+        </childnode>
+      </node>
+      <node id="3630">
+        <label>Source/Chips/Memory.cpp</label>
+      </node>
+      <node id="3697">
+        <label>Source/Compiler/Generator/Symbol.cpp</label>
+      </node>
+      <node id="3712">
+        <label>Source/Utils/ParserBase/ScannerBase.cpp</label>
+      </node>
+      <node id="3684">
+        <label>Source/Compiler/Analyzer/ParseUtils.cpp</label>
+      </node>
+      <node id="3685">
+        <label>Source/Compiler/Analyzer/Scanner.cpp</label>
+      </node>
+      <node id="3641">
+        <label>Source/Chips/Mux8Way16.cpp</label>
+      </node>
+      <node id="3603">
+        <label>Source/Computer/WindowedRuntime.h</label>
+      </node>
+      <node id="3678">
+        <label>Source/Utils/Console.cpp</label>
+      </node>
+      <node id="3584">
+        <label>Source/Chips/Chip.h</label>
+        <childnode refid="3585" relation="include">
+        </childnode>
+        <childnode refid="3583" relation="include">
+        </childnode>
+        <childnode refid="3587" relation="include">
+        </childnode>
+        <childnode refid="3604" relation="include">
+        </childnode>
+        <childnode refid="3607" relation="include">
+        </childnode>
+        <childnode refid="3609" relation="include">
+        </childnode>
+        <childnode refid="3611" relation="include">
+        </childnode>
+        <childnode refid="3589" relation="include">
+        </childnode>
+        <childnode refid="3615" relation="include">
+        </childnode>
+        <childnode refid="3617" relation="include">
+        </childnode>
+        <childnode refid="3619" relation="include">
+        </childnode>
+        <childnode refid="3621" relation="include">
+        </childnode>
+        <childnode refid="3623" relation="include">
+        </childnode>
+        <childnode refid="3624" relation="include">
+        </childnode>
+        <childnode refid="3626" relation="include">
+        </childnode>
+        <childnode refid="3632" relation="include">
+        </childnode>
+        <childnode refid="3629" relation="include">
+        </childnode>
+        <childnode refid="3634" relation="include">
+        </childnode>
+        <childnode refid="3636" relation="include">
+        </childnode>
+        <childnode refid="3639" relation="include">
+        </childnode>
+        <childnode refid="3640" relation="include">
+        </childnode>
+        <childnode refid="3642" relation="include">
+        </childnode>
+        <childnode refid="3644" relation="include">
+        </childnode>
+        <childnode refid="3646" relation="include">
+        </childnode>
+        <childnode refid="3648" relation="include">
+        </childnode>
+        <childnode refid="3650" relation="include">
+        </childnode>
+        <childnode refid="3652" relation="include">
+        </childnode>
+        <childnode refid="3654" relation="include">
+        </childnode>
+        <childnode refid="3656" relation="include">
+        </childnode>
+        <childnode refid="3658" relation="include">
+        </childnode>
+        <childnode refid="3660" relation="include">
+        </childnode>
+        <childnode refid="3662" relation="include">
+        </childnode>
+        <childnode refid="3665" relation="include">
+        </childnode>
+        <childnode refid="3666" relation="include">
+        </childnode>
+        <childnode refid="3668" relation="include">
+        </childnode>
+        <childnode refid="3670" relation="include">
+        </childnode>
+        <childnode refid="3672" relation="include">
+        </childnode>
+      </node>
+      <node id="3590">
+        <label>Source/Chips/Computer.h</label>
+        <childnode refid="3591" relation="include">
+        </childnode>
+        <childnode refid="3592" relation="include">
+        </childnode>
+        <childnode refid="3593" relation="include">
+        </childnode>
+        <childnode refid="3594" relation="include">
+        </childnode>
+        <childnode refid="3595" relation="include">
+        </childnode>
+        <childnode refid="3596" relation="include">
+        </childnode>
+        <childnode refid="3597" relation="include">
+        </childnode>
+        <childnode refid="3598" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+        <childnode refid="3600" relation="include">
+        </childnode>
+      </node>
+      <node id="3629">
+        <label>Source/Chips/Memory.h</label>
+        <childnode refid="3590" relation="include">
+        </childnode>
+        <childnode refid="3630" relation="include">
+        </childnode>
+      </node>
+      <node id="3676">
+        <label>Source/Compiler/Generator/Main.cpp</label>
+      </node>
+      <node id="3621">
+        <label>Source/Chips/DMux8Way.h</label>
+        <childnode refid="3622" relation="include">
+        </childnode>
+      </node>
+      <node id="3592">
+        <label>Source/Chips/Computer.cpp</label>
+      </node>
+      <node id="3716">
+        <label>Source/Utils/ParserBase/ParseError.cpp</label>
+      </node>
+      <node id="3701">
+        <label>Source/Assembler/Scanner.h</label>
+        <childnode refid="3702" relation="include">
+        </childnode>
+        <childnode refid="3703" relation="include">
+        </childnode>
+      </node>
+      <node id="3657">
+        <label>Source/Chips/ProgramCounter.cpp</label>
+      </node>
+      <node id="3624">
+        <label>Source/Chips/HalfAdder.h</label>
+        <childnode refid="3625" relation="include">
+        </childnode>
+      </node>
+      <node id="3662">
+        <label>Source/Chips/Ram8.h</label>
+        <childnode refid="3663" relation="include">
+        </childnode>
+        <childnode refid="3664" relation="include">
+        </childnode>
+      </node>
+      <node id="3579">
+        <label>Source/Utils/Console.h</label>
+        <link refid="Console_8h"/>
+        <childnode refid="3580" relation="include">
+        </childnode>
+        <childnode refid="3581" relation="include">
+        </childnode>
+        <childnode refid="3584" relation="include">
+        </childnode>
+        <childnode refid="3674" relation="include">
+        </childnode>
+        <childnode refid="3675" relation="include">
+        </childnode>
+        <childnode refid="3676" relation="include">
+        </childnode>
+        <childnode refid="3677" relation="include">
+        </childnode>
+        <childnode refid="3678" relation="include">
+        </childnode>
+        <childnode refid="3679" relation="include">
+        </childnode>
+        <childnode refid="3710" relation="include">
+        </childnode>
+      </node>
+      <node id="3652">
+        <label>Source/Chips/Or16.h</label>
+        <childnode refid="3653" relation="include">
+        </childnode>
+      </node>
+      <node id="3588">
+        <label>Source/Chips/CPU.cpp</label>
+      </node>
+      <node id="3633">
+        <label>Source/Chips/Inc16.cpp</label>
+      </node>
+      <node id="3586">
+        <label>Source/Chips/Add16.cpp</label>
+      </node>
+      <node id="3598">
+        <label>Source/Computer/ConsoleRuntime.cpp</label>
+      </node>
+      <node id="3715">
+        <label>Source/Utils/ParserBase/ParseError.h</label>
+        <childnode refid="3687" relation="include">
+        </childnode>
+        <childnode refid="3716" relation="include">
+        </childnode>
+        <childnode refid="3705" relation="include">
+        </childnode>
+        <childnode refid="3712" relation="include">
+        </childnode>
+      </node>
+      <node id="3683">
+        <label>Source/Compiler/Analyzer/ParseUtils.h</label>
+        <childnode refid="3681" relation="include">
+        </childnode>
+        <childnode refid="3684" relation="include">
+        </childnode>
+      </node>
+      <node id="3619">
+        <label>Source/Chips/DMux4Way.h</label>
+        <childnode refid="3620" relation="include">
+        </childnode>
+      </node>
+      <node id="3640">
+        <label>Source/Chips/Mux8Way16.h</label>
+        <childnode refid="3641" relation="include">
+        </childnode>
+      </node>
+      <node id="3698">
+        <label>Source/Compiler/Generator/SymbolTable.h</label>
+        <childnode refid="3682" relation="include">
+        </childnode>
+        <childnode refid="3699" relation="include">
+        </childnode>
+      </node>
+      <node id="3654">
+        <label>Source/Chips/Or8Way.h</label>
+        <childnode refid="3655" relation="include">
+        </childnode>
+      </node>
+      <node id="3602">
+        <label>Source/Computer/ConsoleRuntime.h</label>
+        <childnode refid="3598" relation="include">
+        </childnode>
+        <childnode refid="3599" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classHack_1_1Console" prot="public">Hack::Console</innerclass>
+    <innernamespace refid="namespaceHack">Hack</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">-------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>Charles<sp/>Carley.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>This<sp/>software<sp/>is<sp/>provided<sp/>&apos;as-is&apos;,<sp/>without<sp/>any<sp/>express<sp/>or<sp/>implied</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>warranty.<sp/>In<sp/>no<sp/>event<sp/>will<sp/>the<sp/>authors<sp/>be<sp/>held<sp/>liable<sp/>for<sp/>any<sp/>damages</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>arising<sp/>from<sp/>the<sp/>use<sp/>of<sp/>this<sp/>software.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>Permission<sp/>is<sp/>granted<sp/>to<sp/>anyone<sp/>to<sp/>use<sp/>this<sp/>software<sp/>for<sp/>any<sp/>purpose,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>including<sp/>commercial<sp/>applications,<sp/>and<sp/>to<sp/>alter<sp/>it<sp/>and<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>freely,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>restrictions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>1.<sp/>The<sp/>origin<sp/>of<sp/>this<sp/>software<sp/>must<sp/>not<sp/>be<sp/>misrepresented;<sp/>you<sp/>must<sp/>not</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>claim<sp/>that<sp/>you<sp/>wrote<sp/>the<sp/>original<sp/>software.<sp/>If<sp/>you<sp/>use<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>in<sp/>a<sp/>product,<sp/>an<sp/>acknowledgment<sp/>in<sp/>the<sp/>product<sp/>documentation<sp/>would<sp/>be</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>appreciated<sp/>but<sp/>is<sp/>not<sp/>required.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>2.<sp/>Altered<sp/>source<sp/>versions<sp/>must<sp/>be<sp/>plainly<sp/>marked<sp/>as<sp/>such,<sp/>and<sp/>must<sp/>not<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>misrepresented<sp/>as<sp/>being<sp/>the<sp/>original<sp/>software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>3.<sp/>This<sp/>notice<sp/>may<sp/>not<sp/>be<sp/>removed<sp/>or<sp/>altered<sp/>from<sp/>any<sp/>source<sp/>distribution.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">-------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;String.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;UserInterface/Context.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceHack" kindref="compound">Hack</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422" kindref="member">ConsoleColor</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422ac12944af8b48da06fea92305e07d5a86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422ac12944af8b48da06fea92305e07d5a86" kindref="member">CS_BLACK</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="31" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a3e322f5c257e1d60511f9efb852499ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a3e322f5c257e1d60511f9efb852499ff" kindref="member">CS_DARK_BLUE</ref>,</highlight></codeline>
+<codeline lineno="32" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a4a0ef12656585d3d7de9098f4a367ed8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a4a0ef12656585d3d7de9098f4a367ed8" kindref="member">CS_DARK_GREEN</ref>,</highlight></codeline>
+<codeline lineno="33" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422aabe6734a69d20b2eb87d53460411647f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422aabe6734a69d20b2eb87d53460411647f" kindref="member">CS_DARK_CYAN</ref>,</highlight></codeline>
+<codeline lineno="34" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a5087dcb93e87c9ccb9cebeb709dd670c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a5087dcb93e87c9ccb9cebeb709dd670c" kindref="member">CS_DARK_RED</ref>,</highlight></codeline>
+<codeline lineno="35" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422aa6617dec2367bd28f31ca80b8f85be5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422aa6617dec2367bd28f31ca80b8f85be5c" kindref="member">CS_DARK_MAGENTA</ref>,</highlight></codeline>
+<codeline lineno="36" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422acec9e9d56bbc26b7aa4e07ecae158fb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422acec9e9d56bbc26b7aa4e07ecae158fb3" kindref="member">CS_DARK_YELLOW</ref>,</highlight></codeline>
+<codeline lineno="37" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a33f74366ed335de9402ded1513faa1fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a33f74366ed335de9402ded1513faa1fd" kindref="member">CS_LIGHT_GREY</ref>,</highlight></codeline>
+<codeline lineno="38" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a7a3a406783331d9982717cda0c4b9d32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a7a3a406783331d9982717cda0c4b9d32" kindref="member">CS_GREY</ref>,</highlight></codeline>
+<codeline lineno="39" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a83887a2dd719baca7ae876a83a5dcdf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a83887a2dd719baca7ae876a83a5dcdf0" kindref="member">CS_BLUE</ref>,</highlight></codeline>
+<codeline lineno="40" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422ad8940f15cc539c584cab06a6254e3fcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422ad8940f15cc539c584cab06a6254e3fcb" kindref="member">CS_GREEN</ref>,</highlight></codeline>
+<codeline lineno="41" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422acb0eff31aec39069dc2b5065415a3e4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422acb0eff31aec39069dc2b5065415a3e4c" kindref="member">CS_CYAN</ref>,</highlight></codeline>
+<codeline lineno="42" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a85995eae0ed8467e1a9f39691004a08e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a85995eae0ed8467e1a9f39691004a08e" kindref="member">CS_RED</ref>,</highlight></codeline>
+<codeline lineno="43" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a3be7623273d8f4f63c18cbd69a265f93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a3be7623273d8f4f63c18cbd69a265f93" kindref="member">CS_MAGENTA</ref>,</highlight></codeline>
+<codeline lineno="44" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a341ebe38c827def41083c99fcc558b49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422a341ebe38c827def41083c99fcc558b49" kindref="member">CS_YELLOW</ref>,</highlight></codeline>
+<codeline lineno="45" refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422aad0499502630b8e0c45c07d85d8dd477" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422aad0499502630b8e0c45c07d85d8dd477" kindref="member">CS_WHITE</ref>,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classHack_1_1Console" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classHack_1_1Console" kindref="compound" tooltip="Utility console class. Makes use of std::cout, std::cin and std::cerr ">Console</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>(int8_t&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>(<ref refid="classuint8__t" kindref="compound">uint8_t</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>(int16_t&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>(<ref refid="classuint16__t" kindref="compound">uint16_t</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>(int32_t&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>(uint32_t&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>(int64_t&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>(uint64_t&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a9f1670e1ae36c8eeabff7b1b7b0216d0" kindref="member" tooltip="Blocks until a character is pressed. ">read</ref>(<ref refid="namespaceHack_1af578ea8fc214989b8ebeece788fa787d" kindref="member">String</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a5c033a63b623fbd23d3eef4d8075ee86" kindref="member">readLine</ref>(<ref refid="namespaceHack_1af578ea8fc214989b8ebeece788fa787d" kindref="member">String</ref>&amp;<sp/>v);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a70f7cbd759456099caeeb4c4486bd6fe" kindref="member">setForeground</ref>(<ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422" kindref="member">ConsoleColor</ref><sp/>col);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a79a6f43eebb7245d9bdcd3a0697a60e1" kindref="member">setBackground</ref>(<ref refid="namespaceHack_1a36cd9148d33ac143e1ab550c0cc95422" kindref="member">ConsoleColor</ref><sp/>col);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a2687a8f8471d2a44f8d6bf1f51626dd0" kindref="member">resetColor</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a8c963f238cccb5daee6ea66f242243cf" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceHack_1af578ea8fc214989b8ebeece788fa787d" kindref="member">String</ref>&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1aa75558c74eafde74be9d33818a79a3fe" kindref="member">writeLine</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceHack_1af578ea8fc214989b8ebeece788fa787d" kindref="member">String</ref>&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1aa75558c74eafde74be9d33818a79a3fe" kindref="member">writeLine</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int64_t&amp;<sp/>i);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1aa1c8c889b2c89af6dc65a0973380f59c" kindref="member">writeError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceHack_1af578ea8fc214989b8ebeece788fa787d" kindref="member">String</ref>&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="127" refid="classHack_1_1Console_1a4abd549dea9eb4dd1dd60c4e654104b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a4abd549dea9eb4dd1dd60c4e654104b5" kindref="member">writeLine</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceHack_1af578ea8fc214989b8ebeece788fa787d" kindref="member">String</ref>&amp;<sp/>str,<sp/>Args&amp;&amp;...args)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1ae3a6ca87ce783b824591a2858b2409a1" kindref="member">OutputStringStream</ref><sp/>oss;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/>str;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((oss<sp/>&lt;&lt;<sp/>std::forward&lt;Args&gt;(args)),<sp/>...);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classHack_1_1Console_1aa75558c74eafde74be9d33818a79a3fe" kindref="member">writeLine</ref>(oss.str());</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="136" refid="classHack_1_1Console_1a5cf84c73fa70c41518f806c15b5f7556" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a5cf84c73fa70c41518f806c15b5f7556" kindref="member">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceHack_1af578ea8fc214989b8ebeece788fa787d" kindref="member">String</ref>&amp;<sp/>str,<sp/>Args&amp;&amp;...args)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceHack_1ae3a6ca87ce783b824591a2858b2409a1" kindref="member">OutputStringStream</ref><sp/>oss;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>oss<sp/>&lt;&lt;<sp/>str;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((oss<sp/>&lt;&lt;<sp/>std::forward&lt;Args&gt;(args)),<sp/>...);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classHack_1_1Console_1a8c963f238cccb5daee6ea66f242243cf" kindref="member">write</ref>(oss.str());</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1aa75558c74eafde74be9d33818a79a3fe" kindref="member">writeLine</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceHack_1ae3a6ca87ce783b824591a2858b2409a1" kindref="member">OutputStringStream</ref>&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1aa1c8c889b2c89af6dc65a0973380f59c" kindref="member">writeError</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceHack_1ae3a6ca87ce783b824591a2858b2409a1" kindref="member">OutputStringStream</ref>&amp;<sp/>str);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHack_1_1Console_1a24edb98095550871d32879f324e39e19" kindref="member">debugBreak</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Hack</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/Utils/Console.h"/>
+  </compounddef>
+</doxygen>

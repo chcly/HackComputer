@@ -1,0 +1,57 @@
+class Memory {
+    static internal _ram;
+    static internal _free;
+
+    function void init()
+    { 
+        let _ram = 0;
+        let _free = 2048;
+        return; 
+    }
+    
+    function int peek(int address)              
+    { 
+        return _ram[address]; 
+    }
+    
+    function void poke(int address, int value)  
+    { 
+        let _ram[address] = value; 
+        return;
+    }
+
+    function void allocate(int size) {
+        var int next, len;
+
+        let next = _free[0];
+        let len  = _free[1];
+
+        if (len = 0)
+        {
+            let next = _free;
+            let len = size;
+            let _free[0] = next;
+            let _free[1] = len;
+        }
+        else
+        {
+        }
+
+        return next;
+    }
+
+    function void free(int address) {
+        return;
+    }
+}
+
+class Main
+{
+    function void main()
+    {
+        var int base;
+        do Memory.init();
+        let base = Memory.allocate(512);
+        return base;
+    }
+}
