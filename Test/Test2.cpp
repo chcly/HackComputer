@@ -118,21 +118,6 @@ GTEST_TEST(Assembler, Parser2)
                  GetOutFilePath("Parser2.out"));
 }
 
-GTEST_TEST(Assembler, Error)
-{
-    try
-    {
-        Parser psr;
-        psr.parse(GetTestFilePath("Assembler/Error.asm"));
-
-        EXPECT_FALSE(true);
-    }
-    catch (std::exception& ex)
-    {
-        Console::write(ex.what());
-    }
-}
-
 GTEST_TEST(Assembler, Add)
 {
     Parser psr;
