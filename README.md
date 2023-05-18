@@ -20,4 +20,4 @@ to high-level language execution. It could be expanded upon and taken to the fin
 But at the end of the day it's only emulating the hardware system. If this were to work
 efficiently from machine code executing on the hardware, up to running it in dart with Flutter.
 Then another abstraction should be created to drop the hardware emulation layer and run it
-on the physical CPU. [Similar to.](https://github.com/CharlesCarley/ToyVM)
+on the physical CPU. [Similar to.](https://github.com/chcly/MockVM)
