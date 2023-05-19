@@ -1,6 +1,6 @@
 # Hack Computer
 
-This repository is my implementation of the Hack computer in C++ from the
+This repository is an implementation of the Hack computer in C++ from the
 [NAnd2Tetris course.](https://www.coursera.org/learn/build-a-computer)
 
 The current written document for it can be found [here.](Current/markdown/index.md#hackcomputer)
